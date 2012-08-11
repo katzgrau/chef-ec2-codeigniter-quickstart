@@ -52,14 +52,14 @@ Copy it to cookbooks/accounts/files/default/users/admin/ssh/authorized_keys
 * Accept defaults for the rest
       
 ### Run $ 
-knife cookbook upload -a
-knife environment from file environments/development.json
-knife environment from file environments/staging.json
-knife environment from file environments/production.json
-knife data bag create apps
-knife data bag from file apps data_bags/apps/webapp.json
-knife role from file roles/base.json
-knife role from file roles/webapp.json
+* knife cookbook upload -a
+* knife environment from file environments/development.json
+* knife environment from file environments/staging.json
+* knife environment from file environments/production.json
+* knife data bag create apps
+* knife data bag from file apps data_bags/apps/webapp.json
+* knife role from file roles/base.json
+* knife role from file roles/webapp.json
 
 ### $ source .shortcuts
 
