@@ -1,0 +1,9 @@
+# ami-4bad7422 is the official Canonical Ubuntu 11.10 distro
+
+alias new-webapp-production='knife ec2 server create -i ".chef/webapp-aws" -I ami-f773bf9e -x ubuntu -G default -f t1.micro -E production -r "role[webapp]"'
+alias deploy-webapp-production='knife ssh -a "chef_environment:production AND (role:webapp)" "sudo chef-client"'
+
+alias new-webapp-staging='knife ec2 server create -i .chef/webapp-aws -I ami-f773bf9e -x ubuntu -G default -f t1.micro -E development -r "role[webapp]"'
+alias deploy-webapp-staging='knife ssh "chef_environment:staging AND role:webapp" "sudo chef-client"'
+
+alias deploy-global='knife ssh "role:*" "sudo chef-client"'

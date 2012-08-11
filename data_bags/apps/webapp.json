@@ -1,0 +1,54 @@
+{
+  "id": "webapp",
+  "server_roles": [
+    "webapp"
+  ],
+  "type": {
+    "webapp": [
+      "php",
+      "mod_php_apache2"
+    ]
+  },
+  "database_master_role": [
+    "not needed"
+  ],
+  "repository": "git://github.com/EllisLab/CodeIgniter.git",
+  "revision": {
+    "_default": "master",
+    "development": "master",
+    "staging": "master",
+    "production": "master"
+  },
+  "force": {
+    "_default": true
+  },
+  "databases": {
+    "_default": {
+      "reconnect": "true",
+      "encoding": "utf8",
+      "username": "db_user",
+      "adapter": "mysql",
+      "password": "not needed",
+      "database": "not needed"
+    }
+  },
+  "mysql_root_password": {
+    "_default": "not needed"
+  },
+  "mysql_debian_password": {
+    "_default": "not needed"
+  },
+  "mysql_repl_password": {
+    "_default": "not needed"
+  },
+  "deploy_to": "/var/www/webapp",
+  "deploy_key": "",
+  "docroot": "/var/www/webapp/current",
+  "owner": "webapp",
+  "group": "admin",
+  "packages": {
+  },
+  "pears": {
+  },
+  "local_settings_file": ""
+}

@@ -1,0 +1,29 @@
+{
+  "name": "route53",
+  "description": "Installs/Configures route53",
+  "long_description": "Description\n===========\n\nUpdates Amazon Web Service's Route 53 (DNS) service.\n\nRequirements\n============\n\nAn Amazon Web Services account and a Route 53 zone.\n\nUsage\n=====\n\n```ruby\ninclude_recipe \"route53\"\n\nroute53_record \"create a record\" do\n  name  \"test\"\n  value \"16.8.4.2\"\n  type  \"A\"\n\n  zone_id               node[:route53][:zone_id]\n  aws_access_key_id     node[:route53][:aws_access_key_id]\n  aws_secret_access_key node[:route53][:aws_secret_access_key]\n\n  action :create\nend\n```\n",
+  "maintainer": "Heavy Water Software Inc.",
+  "maintainer_email": "darrin@heavywater.ca",
+  "license": "Apache 2.0",
+  "platforms": {
+  },
+  "dependencies": {
+  },
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "replacing": {
+  },
+  "attributes": {
+  },
+  "groupings": {
+  },
+  "recipes": {
+  },
+  "version": "0.2.0"
+}

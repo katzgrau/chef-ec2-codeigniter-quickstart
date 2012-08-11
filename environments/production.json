@@ -1,0 +1,21 @@
+{
+  "name": "production",
+  "default_attributes": {
+    "apache2": {
+      "listen_ports": [
+        "80",
+        "443"
+      ],
+      "force_https": false
+    },
+    "webapp": {
+      "memcache_host": "",
+      "memcache_port": "11211"
+    }
+  },
+  "json_class": "Chef::Environment",
+  "description": "",
+  "cookbook_versions": {
+  },
+  "chef_type": "environment"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "base",
+  "default_attributes": {
+    "chef": {
+      "client_version": "0.10.0",
+      "server_url": "https://api.opscode.com/organizations/ciquickstart",
+      "validation_client_name": "ciquickstart-validator"
+    }
+  },
+  "json_class": "Chef::Role",
+  "run_list": [
+    "recipe[accounts::default]",
+    "recipe[accounts::sysadmins]",
+    "recipe[webapp::apache2logs]",
+    "recipe[webapp::hosts]"
+  ],
+  "description": "",
+  "chef_type": "role",
+  "override_attributes": {
+  }
+}

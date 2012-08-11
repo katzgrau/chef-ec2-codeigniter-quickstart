@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+  },
+  "name": "webapp",
+  "maintainer_email": "YOUR_EMAIL",
+  "attributes": {
+  },
+  "license": "All rights reserved",
+  "suggestions": {
+  },
+  "platforms": {
+  },
+  "maintainer": "Katzgrau LLC",
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "version": "0.0.1",
+  "recommendations": {
+  },
+  "recipes": {
+  },
+  "groupings": {
+  },
+  "conflicting": {
+  },
+  "replacing": {
+  },
+  "description": "Installs/Configures webapp",
+  "providing": {
+  }
+}

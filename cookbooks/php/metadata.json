@@ -1,0 +1,50 @@
+{
+  "dependencies": {
+    "xml": ">= 0.0.0",
+    "mysql": ">= 0.0.0",
+    "build-essential": ">= 0.0.0"
+  },
+  "name": "php",
+  "maintainer_email": "cookbooks@opscode.com",
+  "attributes": {
+  },
+  "license": "Apache 2.0",
+  "suggestions": {
+  },
+  "platforms": {
+    "debian": ">= 0.0.0",
+    "fedora": ">= 0.0.0",
+    "centos": ">= 0.0.0",
+    "ubuntu": ">= 0.0.0",
+    "redhat": ">= 0.0.0"
+  },
+  "maintainer": "Opscode, Inc.",
+  "long_description": "",
+  "version": "1.0.2",
+  "recommendations": {
+  },
+  "recipes": {
+    "php::module_fpdf": "Install the php-fpdf package",
+    "php": "Installs php",
+    "php::module_sqlite3": "Install the php5-sqlite3 package",
+    "php::module_ldap": "Install the php5-ldap package",
+    "php::module_gd": "Install the php5-gd package",
+    "php::module_apc": "Install the php5-apc package",
+    "php::package": "Installs php using packages.",
+    "php::module_memcache": "Install the php5-memcache package",
+    "php::module_mysql": "Install the php5-mysql package",
+    "php::module_fileinfo": "Install the php5-fileinfo package",
+    "php::module_curl": "Install the php5-curl package",
+    "php::module_pgsql": "Install the php5-pgsql packag",
+    "php::source": "Installs php from source."
+  },
+  "groupings": {
+  },
+  "conflicting": {
+  },
+  "replacing": {
+  },
+  "description": "Installs and maintains php and php modules",
+  "providing": {
+  }
+}

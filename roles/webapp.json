@@ -1,0 +1,30 @@
+{
+  "name": "webapp",
+  "default_attributes": {
+  },
+  "json_class": "Chef::Role",
+  "env_run_lists": {
+    "production": [
+      "role[base]",
+      "recipe[mysql::client]",
+      "recipe[webapp]"
+    ],
+    "staging": [
+      "role[base]",
+      "recipe[mysql::client]",
+      "recipe[webapp]"
+    ],
+    "development": [
+      "role[base]",
+      "recipe[mysql::client]",
+      "recipe[webapp]",
+      "role[utility]"
+    ]
+  },
+  "run_list": [
+  ],
+  "description": "The webapp.com core application role",
+  "chef_type": "role",
+  "override_attributes": {
+  }
+}
